@@ -11,7 +11,7 @@ function taskOne() {
         console.log("b - a =", b - a);
         console.log("b * a =", b * a);
         console.log("b / a =", b / a);
-}
+};
 
 function taskTwo() {
     console.log("true && true", true);
@@ -26,7 +26,7 @@ function taskTwo() {
     console.log("(true || false) && (true || false)", true);
     console.log("10 || 0 && 'dog' || ''", 10);
     console.log("(10 || 0) && ('dog' || '')", "dog");
-}
+};
 
 function taskThree() {
     const firstNumberTaskThree = Number(prompt("Enter first number"));
@@ -38,7 +38,7 @@ function taskThree() {
     } else {
         alert(`${firstNumberTaskThree} is less than ${secondtNumberTaskThree}`);
     };
-}
+};
 
 function taskFour() {
     const firstNumberTaskFour = Number(prompt("Enter first number"));
@@ -60,7 +60,7 @@ function taskFour() {
         default:
             alert("This action is not supported");
     };
-}
+};
 
 function taskFive() {
     const personAge = Number(prompt("Enter person's age"));
@@ -74,4 +74,4 @@ function taskFive() {
     } else {
         alert("You are good to go");
     };
-}
+};

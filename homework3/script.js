@@ -6,15 +6,15 @@ switch (taskNumber) {
         const a = 5;
         const b = 10;
 
-        console.log("a + b =", a + b)
-        console.log("a - b =", a - b)
-        console.log("a * b =", a * b)
-        console.log("a / b =", a / b)
+        console.log("a + b =", a + b);
+        console.log("a - b =", a - b);
+        console.log("a * b =", a * b);
+        console.log("a / b =", a / b);
 
-        console.log("b + a =", b + a)
-        console.log("b - a =", b - a)
-        console.log("b * a =", b * a)
-        console.log("b / a =", b / a)
+        console.log("b + a =", b + a);
+        console.log("b - a =", b - a);
+        console.log("b * a =", b * a);
+        console.log("b / a =", b / a);
 
     case 2:
         // 2
@@ -36,12 +36,12 @@ switch (taskNumber) {
         const firstNumberTaskThree = Number(prompt("Enter first number"));
         const secondtNumberTaskThree = Number(prompt("Enter second number"));
         if (firstNumberTaskThree == secondtNumberTaskThree){
-            alert(`${firstNumberTaskThree} is equal to ${secondtNumberTaskThree}`)
+            alert(`${firstNumberTaskThree} is equal to ${secondtNumberTaskThree}`);
         } else if (firstNumberTaskThree > secondtNumberTaskThree) {
-            alert(`${firstNumberTaskThree} is bigger than ${secondtNumberTaskThree}`)
+            alert(`${firstNumberTaskThree} is bigger than ${secondtNumberTaskThree}`);
         } else {
-            alert(`${firstNumberTaskThree} is less than ${secondtNumberTaskThree}`)
-        }
+            alert(`${firstNumberTaskThree} is less than ${secondtNumberTaskThree}`);
+        };
 
     case 4:
         // 4
@@ -77,7 +77,7 @@ switch (taskNumber) {
             alert("Ask adult for a permission");
         } else {
             alert("You are good to go");
-        }
+        };
 };
 
 location.reload()

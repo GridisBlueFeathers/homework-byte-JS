@@ -85,8 +85,7 @@ const PASSWORD = "1q2w3e";
 const authorizeFor = () => {
     let userLogin;
     let userPassword;
-    let attemptsLeftFor = 3;
-    for (attemptsLeftFor; attemptsLeftFor > 0; attemptsLeftFor--) {
+    for (let attemptsLeftFor = 3; attemptsLeftFor > 0; attemptsLeftFor--) {
         userLogin = prompt('Enter user name:');
         if(!userLogin) {
             alert(`Enter user login, attempts left: ${attemptsLeftFor - 1}`);

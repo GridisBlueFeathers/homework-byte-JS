@@ -40,18 +40,21 @@ console.log(getOccurrencesCount([
 
 // 3
 const findExcess = (arrFindExcess) => {
-    const arrOfMods = new Array();
+    const arrOfEvens = new Array();
+    const arrOfOdds = new Array();
     
     for (let arrFindExcessNumber of arrFindExcess) {
-        arrOfMods.push(arrFindExcessNumber % 2)
+        if (arrFindExcessNumber % 2 == 0) {
+            arrOfEvens.push(arrFindExcessNumber);
+        } else {
+            arrOfOdds.push(arrFindExcessNumber);
+        }
     }
 
-    const objOfModsAmount = getOccurrencesCount(arrOfMods);
-
-    if (objOfModsAmount[0] == 1) {
-        return arrFindExcess[arrOfMods.indexOf(0)];
+    if (arrOfEvens.length == 1) {
+        return arrOfEvens[0];
     } else {
-        return arrFindExcess[arrOfMods.indexOf(1)];
+        return arrOfOdds[0];
     }
 }
 

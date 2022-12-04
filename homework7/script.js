@@ -28,7 +28,8 @@ const salariesSum = (employeesObj) => {
     for (let key in employeesObj) {
         sum += +employeesObj[key] * 100;
     }
-    return sum / 100;
+    const formattedSum = sum.toFixed(2);
+    return formattedSum;
 }
 
 console.log(salariesSum(salaries));

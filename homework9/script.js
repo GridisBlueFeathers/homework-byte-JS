@@ -150,13 +150,31 @@ const data = [
     },
   ];
 
-const filterData = (filterDataArr, filterDataObj) => {
-    const filterDataObjKeysArr = Object.keys(filterDataObj);
-    const filterDataRes = filterDataObjKeysArr.reduce((accumulator, currentValue) => {
-        const accumulatorFiltered = accumulator.filter(accumulatorItem => accumulatorItem[currentValue] == filterDataObj[currentValue]);
-        return accumulatorFiltered;
-    }, filterDataArr);
-    return filterDataRes;
+// const filterData = (filterDataArr, filterDataObj) => {
+//     const filterDataObjKeysArr = Object.keys(filterDataObj);
+//     const filterDataRes = filterDataObjKeysArr.reduce((accumulator, currentValue) => {
+//         const accumulatorFiltered = accumulator.filter(accumulatorItem => accumulatorItem[currentValue] == filterDataObj[currentValue]);
+//         return accumulatorFiltered;
+//     }, filterDataArr);
+//     return filterDataRes;
+// }
+
+// console.log(filterData(data, { age: 19, position: "junior" }));
+
+const filterDataAlt = (filterDataArr, filterDataObj) => {
+  const filteredDataArr = filterDataArr.filter(filterDataArrObj => {
+    const filterDataArrObjKeys = Object.keys(filterDataArrObj);
+    const everyRes = filterDataArrObjKeys.every(filterDataArrObjKey => {
+      if (filterDataObj.hasOwnProperty(filterDataArrObjKey)) {
+        return filterDataArrObj[filterDataArrObjKey] == filterDataObj[filterDataArrObjKey];
+      } else {
+        return true
+      }
+    });
+    return everyRes;
+  })
+  return filteredDataArr;
 }
 
-console.log(filterData(data, { age: 19, position: "junior" }));
+console.log(filterDataAlt(data, { age: 19, position: "junior" }));
+console.log(filterDataAlt(data, { age: 24 }));

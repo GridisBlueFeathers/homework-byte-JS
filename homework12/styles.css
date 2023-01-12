@@ -28,7 +28,6 @@ p, body {
     background-color: #000;
     width: 16px;
     height: 16px;
-    /* transform: translate(73px, -8px) rotate(45deg); */
     z-index: -1;
 }
 

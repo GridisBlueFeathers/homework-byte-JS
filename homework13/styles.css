@@ -1,0 +1,12 @@
+.imageWrapper {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.imageWrapper img {
+    width: 50%;
+    height: 50%;
+}

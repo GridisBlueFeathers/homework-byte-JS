@@ -78,3 +78,16 @@ const messageTwo = createMessage({
 });
 
 console.log('Task 4: message, messageTwo :>> ', message, messageTwo);
+
+// 5
+let str = "x1y 722a 333 a123v1n a55555a qwe1 1zxc";
+
+const regexOne = /\w\d+\w/gmi;
+const regexOneMatch = str.match(regexOne);
+
+const regexTwo = /[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-][a-zA-Z0-9._-]+/gmi;
+const regexTwoTest = regexTwo.test("my-page.com");
+
+const regexThree = /\d{12,}/gmi;
+
+console.log(`Task 5: ${regexOne} ${regexOneMatch}\n${regexTwo} my-page.com ${regexTwoTest}\n${regexThree}`);

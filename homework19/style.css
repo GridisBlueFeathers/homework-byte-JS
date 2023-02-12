@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.container > div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.container > div:last-of-type {
+    margin-bottom: 0px;
+}
+
+#country img {
+    width: 80%;
+}
+
+#character {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
